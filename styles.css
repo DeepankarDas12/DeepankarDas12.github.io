@@ -1,0 +1,36 @@
+#back {
+  background-size: cover;
+}
+#pg {
+  min-width: 100%;
+}
+#inact {
+  opacity: 20%;
+}
+.btns {
+  background-color: #fff3d3aa;
+}
+
+#bdy {
+  background-color: #fff3d3aa;
+}
+#bdy1{
+	background-color: #fff3d3aa;
+}
+#bdy2{
+	background-color: #ddd1b1aa;
+}
+.content {
+  display: flex;
+}
+
+.content h2,
+.content p {
+  margin: 5px;
+}
+.ribbonc {
+  height: 2vh;
+  background-image: url('Images/ribbonc.svg');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+}

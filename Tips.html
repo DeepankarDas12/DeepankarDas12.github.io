@@ -1,0 +1,76 @@
+<html>
+<script src="scripts.js"></script>
+  <head>
+    <title>Deepankar Das: Tip</title>
+	<link rel="stylesheet" href="styles.css">
+  </head>
+ <body id="back" background="Images\background.svg" >
+     <div class="ribbonc"></div>
+ <div class="btns" w3-include-html="header.html"></div>
+ <div class="content" id="bdy">
+ <h1> Latex beamer in SVG format  </h1>
+ </div>
+ <div class="content" id="bdy">
+ <h2> Advantages over PDF beamer </h2>
+ </div>
+ <div class="content" id="bdy">
+ <ul>
+ <li> Videos and animations can be presented without depending on flash (which is no longer supported in most web browsers). </li>
+ <li> Custom pointers can be used independent of system OS. </li>
+ <li> Raster images are linked instead of being embedded, therefore can be changed without recompiling. </li>
+ </ul>
+ </div>
+ <div class="content" id="bdy">
+ <h2> Disadvantages over PDF beamer </h2>
+ </div>
+ <div class="content" id="bdy">
+ <ul>
+ <li> Does not produce a single file, therefore directory structure must be preserved. </li>
+ <li> Needs extra work to get a printout. </li>
+ <li> Hypertex is used instead of hyperref, so some functionalities may be limited. </li>
+ </ul>
+ </div>
+ <div class="content" id="bdy">
+ <h2> How to do it? </h2>
+ </div>
+ <div class="content" id="bdy">
+ <p> I have done it in MiKTeX but other LaTeX distributions should also work. The required files are <a href="Files\Example.zip" >here</a>.</p>
+ </div> 
+ <div class="content" id="bdy">
+ <p> The above link contains a zip file. The main components that you need are 'SVGPPT.sty' and 'pointer' folder. The 'pointer' folder contains some custom pointer icons. You can also add your own icons to it. The file 'SVGPPT.sty' is the package that is to be used in your tex files. Both of these should be in the folder containing your tex file.</p>
+ </div> 
+ <div class="content" id="bdy">
+ <p>The zip file also contains an "Example.tex" as a sample document. It should be compiled using the following commands (open terminal in the 'Example' folder and proceed),</p>
+ </div> 
+ <div class="content" id="bdy">
+ <ul>
+ <li> dvilualatex  -synctex=1 -interaction=nonstopmode "Example"</li>
+ <li> dvisvgm --linkmark=none --bbox=papersize --no-fonts --zoom=-1 --page=- "Example"</li>
+ </ul>
+ </div>
+ <div class="content" id="bdy">
+	<p> You might have to run the above commands twice to ensure that the hypertex links work. You can view the presentation by opening the 'Example.html' You can change slides with arrow keys. The compiled beamer should like the following.</p>
+ </div>
+ <div class="content" id="bdy">
+ <object type="image/svg+xml" data="Files\Example\Example-1.svg"> </object>
+ </div>
+ <div class="content" id="bdy">
+	<p> A <a href= "Files\TexStudioSVG.txsprofile"> TeXstudio profile</a> is provided here which can be loaded into TeXstudio to automate the above steps. Similar profiles can also be created with other editors. </p>
+ </div>
+ <div class="content" id="bdy">
+ <h2>Credits:</h2>
+ </div> 
+ <div class="content" id="bdy">
+ <ul>
+ <li> Slide navigation: <a href="https://ctan.org/pkg/media4svg?lang=en">https://ctan.org/pkg/media4svg?lang=en</a> </li>
+ <li> Zeropad: <a href="https://tex.stackexchange.com/a/412225">https://tex.stackexchange.com/a/412225</a> </li>
+ <li> Custom cursor: <a href="https://tex.stackexchange.com/questions/539083/beamer-presentationlaser-cursor-option/539097?noredirect=1#comment1362146_539097">https://tex.stackexchange.com/questions/539083/beamer-presentationlaser-cursor-option/539097?noredirect=1#comment1362146_539097</a></li>
+ <li> GIF embedding: <a href="https://tex.stackexchange.com/a/526468">https://tex.stackexchange.com/a/526468</a></li>
+ </ul>
+ </div>
+     <div class="ribbonc"></div>
+ <script>
+		includeHTML();
+</script>
+</body>
+</html>
