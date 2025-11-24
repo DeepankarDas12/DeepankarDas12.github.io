@@ -1,0 +1,245 @@
+% !TeX spellcheck = en_GB
+\documentclass[a4paper,10pt]{article}
+\usepackage{geometry}
+\geometry{left=0.5in, right=0.5in, top=0.5in, bottom=0.5in, headsep=.1in}
+%\usepackage{xcolor}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\newcommand{\mytexttilde}{\raisebox{0.5ex}{\texttildelow}}
+\usepackage{booktabs, multirow}
+% Header for the CV
+\pagestyle{fancy}
+%\fancyhf{}
+\fancyhead[L]{\textbf{Deepankar Das}}
+\fancyhead[R]{\textbf{Curriculum Vitae}}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{1.5ex}{1ex}
+%\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.99\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+%\titleformat{\section}{\LARGE}{\rlap{\color{Aquamarine1!92!Chartreuse1}\rule[-0.4cm]{\linewidth}{1.2cm}} \thesection}{1em}{}
+% Adjusting section font size and style
+\titleformat{\section}[block]{\normalfont\LARGE\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}[runin]{\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+\newcommand{\mysectionast}[1]{\section*{\colorbox{lightgray}{\makebox[\linewidth][s]{#1\hfill}}}}
+
+\begin{document}
+	
+	% Profile Image and Contact Information
+	\begin{tabular}{@{}p{0.005\textwidth} @{}p{0.2\textwidth} p{0.6\textwidth}@{}}
+		%\multirow{3}{*}{\includegraphics[width=0.12\textwidth]{profile.jpg}} 
+		& Name: & \textbf{Deepankar Das} \\
+		& Website: & \href{https://deepankardas12.github.io}{deepankardas12.github.io}\\
+		& Branch: & Mechanical Engineering\\
+	%	& Year of Study: & 6.5 years\\
+		 & Contact Info.: & (mail id) \href{mailto:deepankardas12@gmail.com}{deepankardas12@gmail.com}\\ 
+		 & & (mail id) \href{mailto:deepankd@iitk.ac.in}{deepankd@iitk.ac.in}\\
+		 & & (mobile) +91 9939840206\\
+		 & Address.: & No. 1251, Tower B1 Shivkripa, Gooba Garden Appartments,\\
+		 & &  Kalyanpur, Kanpur. PIN: 208017\\
+		 & & Uttar Pradesh, India.
+		 %& Website: & \href{https://home.iitk.ac.in/~deepankd}{home.iitk.ac.in/{\mytexttilde}deepankd}
+	\end{tabular}
+
+
+		\mysectionast{Education}
+	
+	\begin{tabbing}
+		\hspace{0.1cm} \= \hspace{0.1cm} \= \hspace{0.1cm} \= \hspace{1.15cm} \= \hspace{10cm} \= \hspace{3.5cm} \= \kill
+		\>\textbf{Ph.D. in Mechanical Engineering} \> \> \> \> \textit{Jul 2018 – Nov 2025} \> \hspace{1cm}CPI: 9.5/10 \\
+		\>\> IIT Kanpur \\
+		\>\> \> \textit{Thesis(defended):} Symmetry based analysis of instabilities in a plate with stiffened edge.\\
+		\>\> \> \textit{Supervisor:} \href{https://home.iitk.ac.in/~bls}{Basant Lal Sharma}\\
+		\>\> \> \textit{Other Defense Committee Members:}\\
+		 \>\> \> \> Shrinidhi S. Pandurangi (Mechanical Engineering, IIT Bombay)\\
+		 \>\> \> \> Anindya Chatterjee (Mechanical Engineering, IIT Kanpur)\\
+		 \>\> \> \> Shyam Sunder Gopalakrishnan (Mechanical Engineering, IIT Kanpur)\\
+		 \>\> \> \> Malay Banerjee (Mathematics \& Statistics, IIT Kanpur)\\
+		 \>\> \> \> Naveen Tiwari (Chemical Engineering, IIT Kanpur)\\		%	\\
+		%\vspace{2pt}\\
+		\\[-0.3cm]
+		\>\textbf{M.Tech in Machine Design} \> \> \> \> \textit{Jul 2016 – Apr 2018} \> \hspace{1cm}CPI: 9.6/10 \\
+		\>\> IIT (ISM) Dhanbad \\
+		\>\> \> \textit{Thesis:} Analytical and experimental investigation of generic perforated bias flow liners.\\
+		\>\> \> \textit{Supervisor:} \href{https://www.iitism.ac.in/faculty-details?faculty=rnhota}{Rabindra Nath Hota}\\
+		%	\\
+		%\vspace{2pt}
+		\\[-0.3cm]
+		\>\textbf{B.Tech in Mechanical Engineering} \> \> \> \> \textit{Jul 2012 – Apr 2016} \> \hspace{1cm}CPI: 8.0/10 \\
+		\>\>IIT (ISM) Dhanbad \\
+		%\>\> \>\textit{Project:} Study of transfer function method for perforated liners.\\
+		\\[-0.3cm]
+		\>\textbf{Senior Secondary School (Grade 12$^{\mathrm{th}}$)} \> \> \> \> \textit{Apr 2012} \> \hspace{0.8cm}Score: 84.0\%  \\
+		\>\>CBSE \\
+		\\[-0.3cm]
+		\>\textbf{Secondary School (Grade 10$^{\mathrm{th}}$)} \> \> \> \> \textit{Apr 2010} \> \hspace{0.5cm}CGPA: 9.6/10 \\
+		\>\>CBSE
+	\end{tabbing}
+	%\vspace{20pt}
+	%\section*{\colorbox{lightgray}{\makebox[\linewidth][s]{Professional Summary\hfill}}}
+	%\mysectionast{Professional Summary}
+	\mysectionast{Professional Summary}
+	
+	%Ph.D. student in Mechanical Engineering, specializing in nonlinear problems involving structural mechanics. Expertise in using commercial CAE tools like ABAQUS and COMSOL Multiphysics for advanced structural and aero-acoustic analysis as well as writing finite element codes from scratch for specialized problems. Proficient in symmetry-based nonlinear finite element analysis (FEA) techniques and experienced in tackling complex engineering challenges through both analytical and numerical methods. 
+	
+	%Has analytical and experimental experience with aeroacoustic problems during M.Tech.
+	
+	Ph.D. in Mechanical Engineering with specialization in nonlinear problems in structural mechanics. Expertise in nonlinear elasticity, theory of plates and shells, and Cosserat rod theory, with doctoral research focused on Lyapunov–Schmidt reduction and local bifurcation analysis of coupled plate–rod systems. Skilled in both analytical and numerical approaches, including writing custom finite element codes along with using commercial tools like ABAQUS and COMSOL Multiphysics for advanced structural and multiphysics analysis.
+	
+	Possesses additional background in aeroacoustic problems during M.Tech., combining strong theoretical foundations with computational modeling to tackle complex engineering challenges.
+%	\vspace{10pt}
+	
+
+	
+	
+	
+%	\vspace{20pt}
+	
+	\mysectionast{Key Skills}
+	\begin{itemize}[left=0pt, label={--}]
+		\item \textbf{Technical Expertise:} Bifurcation analysis, Group Theory, Nonlinear Finite Element Analysis, Structural Buckling Analysis, Aero-acoustics.
+		\item \textbf{Software Proficiency:} Mathematica, Maple, ABAQUS CAE, COMSOL Multiphysics, ANSYS, SOLIDWORKS.
+		\item \textbf{Programming Skills:} Python, MATLAB, C, C++.
+	\end{itemize}
+	
+%	\vspace{20pt}
+	
+	\mysectionast{Professional Experience}
+	\noindent
+	\textbf{Ph.D. Candidate} \hfill \textit{2018 – 2025} \\
+	IIT Kanpur
+	\begin{itemize}[left=0pt, label={--}]
+		\item Teaching assistant: Duties included preparing assignment solutions, grading, and clarifying student doubts for the following courses:\\
+		\begin{tabular}{|l|c|r|}
+			\hline
+			Course & Instructor & Period\\
+			\hline
+			Nature and Properties of Materials & C. Chandraprakash & 2018-19 2$^\mathrm{nd}$ Semester\\
+			Introduction to Solid Mechanics & C. Chandraprakash & 2019-20 1$^{\mathrm{st}}$ Semester\\
+			Engineering Graphics & Basant Lal Sharma & 2019-20 2$^\mathrm{nd}$ Semester\\
+			Introduction to Solid Mechanics & C. Chandraprakash & 2020-21 1$^{\mathrm{st}}$ Semester\\
+			Introduction to Continuum Mechanics & Basant Lal Sharma & 2020-21 2$^\mathrm{nd}$ Semester\\
+			Introduction to Solid Mechanics & Basant Lal Sharma & 2021-22 1$^{\mathrm{st}}$ Semester\\
+			Calculus of Variations & Basant Lal Sharma & 2021-22 2$^\mathrm{nd}$ Semester\\
+			Wave Propagation in Solids & C. Chandraprakash & 2022-23 2$^\mathrm{nd}$ Semester\\
+			Introduction to Solid Mechanics & Basant Lal Sharma & 2023-24 1$^{\mathrm{st}}$ Semester\\
+			Introduction To Complex Analysis & Saurabh Kumar Singh& 2024-25 1$^{\mathrm{st}}$ Semester\\
+			\hline
+		\end{tabular}
+		\item Tutor in undergraduate course on "Mechanics of Solids", under instructor C.S.Upadhyay during the period of 2022-23, 1$^{\mathrm{st}}$ Semester. The duties involved solving tutorial problems in class, clearing corresponding doubts and grading examination answer scripts.
+	\end{itemize}
+%	\vspace{5pt}
+	\noindent
+	\textbf{M.Tech Research Scholar} \hfill \textit{2016 – 2018} \\
+	IIT (ISM) Dhanbad
+	\begin{itemize}[left=0pt, label={--}]
+		\item Contributed to the design and setup of a multi-flow impedance tube for measuring the acoustic characteristics of bias-flow liners, as part of a project funded by the Gas Turbine Research Establishment (GTRE), a national laboratory of India's Defence Research \& Development Organisation (DRDO).
+	\end{itemize}
+	\mysectionast{Internship}
+%	\vspace{20pt}
+		\noindent
+	\textbf{Undergraduate vocational training } \hfill \textit{08.06.2015 – 07.07.2015} \\
+	Steel Authority of India, Rourkela
+	
+	\mysectionast{Research Topics and Projects}
+	\noindent
+	\textbf{Symmetry-based Analysis of Instabilities in a Plate with Stiffened Edge} \hfill Ph.D. Dissertation
+	\begin{itemize}[left=0pt, label={--}]
+		\item Analyzed the bifurcation behavior and instabilities in a circular von Kármán plate using symmetry-based reduction methods. Utilized a variational approach to define the nonlinear differential operator and construct the null space of the linearized operator. Identified two distinct critical mode patterns—interior deformation and edge deformation—and determined corresponding local bifurcation curves semi-analytically. The results were validated with numerical simulations and Finite Element Analysis. This research provides insights into symmetry-driven bifurcation phenomena in nonlinear elastic systems.
+	\end{itemize}
+	
+%	\vspace{5pt}
+	
+	\noindent
+	\textbf{Analytical and Experimental Investigation of Generic Perforated Bias Flow Liner} \hfill M.Tech Thesis Project
+	\begin{itemize}[left=0pt, label={--}]
+		\item Developed analytical models for conical cavity-liner ducts and liners with mixed porosity to suppress combustion instabilities in jet engines. Employed a control volume approach to account for acoustic coupling with mean flows. Experimentally investigated the damping performance of uniform and mixed porosity liners using the two-load method, comparing the performance of cylindrical and conical liners. Analyzed the effects of varying cone angles on absorption characteristics and observed a shift in absorption curve troughs with changing cone angles.
+	\end{itemize}
+	
+	\vspace{5pt}
+	
+	\noindent
+	\textbf{Projects done during course work}
+	\begin{itemize}[left=0pt, label={--}]
+		\item In postgraduate ``Applied Dynamics and vibration" course: Obtained state-space solutions for a rolling coin simulation and its animated results.
+		\item In postgraduate ``Calculus of variation" course: Derived conservation laws for micro-polar elasticity using Noether's theorem.
+	\end{itemize}
+	
+%		\vspace{20pt}
+	
+	\mysectionast{Scholastic Achievements}
+	\begin{itemize}[left=0pt, label={--}]
+		\item Recipient of Fellowship for Academic and Research Excellence (FARE) at IIT Kanpur starting from April 2025.
+		\item Graduate Aptitude Test in Engineering, \textbf{GATE (2016):} All India Rank – 2635 $\approx$ 98.6 percentile.
+		\item Indian Institute of Technology Joint Entrance Examination, \textbf{IIT JEE (2012):} All India Rank – 5354 $\approx$ 98.9 percentile.
+		\item \textbf{9th National Cyber Olympiad (2009):} National Rank – 82.
+	\end{itemize}
+
+	\mysectionast{Major Courses}
+	\begin{itemize}[left=0pt, label={--}]
+		\item \textbf{Undergraduate-level courses (B.Tech):} Advanced solid mechanics, Dynamics of machinery
+		\item \textbf{Postgraduate-level courses (M.Tech):} Mechanical Vibration and control, Finite Element.
+		\item \textbf{Postgraduate-level courses (Ph.D.):} Finite Element Methods in engineering, Nonlinear Finite Element Methods in, Fracture and Fatigue, Granular materials, Introduction to continuum mechanics, Calculus of variations, Mechanics of soft materials, Symmetry and Properties of Crystals, Mechanics of Biological Membranes.
+	\end{itemize}
+	
+	\mysectionast{Talks}
+	\begin{enumerate}
+		\item 58$^{\mathrm{th}}$ Meeting of the Society for Natural Philosophy (\href{https://sites.google.com/view/snp2024}{SNP 2024 - Nonlinear Theories in Mechanics})\\
+		Title: Symmetry Based Analysis of Instabilities in a Plate with Stiffened Edge\\
+		Venue: Aarhus University, Aarhus, Denmark\\
+		Date: 11$^{\mathrm{th}}$ June, 2024 
+		\item  6$^{\mathrm{th}}$ Indian Conference on Applied Mechanics 
+		(\href{https://incam.isam.co.in/schedule}{INCAM 2024})\\
+		Title: Symmetry Based Analysis of Instabilities in a Plate with Stiffened Edge\\
+		Venue: National Institute of Technology Warangal, Telangana, India\\
+		Date: 14$^{\mathrm{th}}$ June, 2024
+		\item 9$^{\mathrm{th}}$ European Congress on Computational Methods in Applied Sciences and Engineering (\href{https://eccomas2024.org/event/contribution/9208c324-b3bd-11ee-ac5b-000c29ddfc0c}{ECCOMAS 2024})\\
+		Title: Symmetry Based Analysis of Instabilities in a Plate with Stiffened Edge\\
+		Venue: Lisbon Congress Centre, Lisbon, Portugal\\
+		Date: 4$^{\mathrm{th}}$ June, 2024 (Missed due to delay in visa processing)
+		\item 11$^{\mathrm{th}}$ European Solid Mechanics Conference (ESMC 2022)\\
+		Title: Symmetry Based Analysis of Instabilities in a Plate with Stiffened Edge\\
+		Venue: National University of Ireland, Galway, Ireland \\
+		Date: 4$^{\mathrm{th}}$ - 8$^{\mathrm{th}}$ July, 2022 (Missed due to issues with visa processing)
+	\end{enumerate}
+	In addition to above, also gave talks based on my PhD thesis in Research scholar's day 2022 and Institute research symposium 2024 held at institute level at IIT Kanpur.
+	
+	\mysectionast{Peer-Reviewed Publications}
+	\begin{enumerate}
+		\item \textbf{Deepankar Das}, B. L. Sharma, ``Equilibrium of a circular von-Kármán plate bonded with a spatial Kirchhoff rod," \textit{International Journal of Solids and Structures,} Volume 326, 2026, 113736, ISSN 0020-7683, \href{https://doi.org/10.1016/j.ijsolstr.2025.113736}{DOI: 10.1016/j.ijsolstr.2025.113736}
+		\item \textbf{Deepankar Das}, B. L. Sharma, ``Local bifurcation analysis of circular von-Kármán plate with Kirchhoff rod boundary," \textit{SIAM Journal on Applied Mathematics}, vol. 85, no. 4, pp. 1749–1784, 2025, \href{https://doi.org/10.1137/24M1703999}{DOI: 10.1137/24M1703999}
+		\item N.K. Jha, \textbf{Deepankar Das}, Ashutosh Tripathi, R.N. Hota, ``Acoustic damping: Analytical prediction with experimentalvalidation of mixed porosity liners and analytical investigation of conical liners," \textit{Applied Acoustics}, vol. 150, 2019,Pages 179-189, ISSN 0003-682X. \href{https://doi.org/10.1016/j.apacoust.2019.02.006}{DOI: 10.1016/j.apacoust.2019.02.006}.
+		\item \textbf{Deepankar Das}, Utkarsh Chhibber, R.N. Hota, ``Modification of Two-Load Method for Measuring Acoustic Properties with Mean Flow," in \textit{Kumar M., Pandey R., Kumar V. (eds) Advances in Interdisciplinary Engineering.} Lecture Notes in Mechanical Engineering. Springer, Singapore, 2019. \href{https://doi.org/10.1007/978-981-13-6577-5_55}{DOI: 10.1007/978-981-13-6577-5\_55}.
+	\end{enumerate}
+	%\mysectionast{Manuscript under Review}
+	%\begin{enumerate}
+	%	\item \textbf{Deepankar Das}, B. L. Sharma, ``Equilibrium of circular von-Kármán plate bonded with Kirchhoff rod," \textit{International Journal of Solids and Structures}[UNDER REVIEW][\href{https://arxiv.org/abs/2501.10442}{arXiv draft: 2501.10442}]
+	%\end{enumerate}
+	\mysectionast{Manuscripts under Preparation (Tentative Titles)}
+	\begin{enumerate}
+		\item Symmetry based finite element technique for bifurcation analysis of plate problems.
+		\item Instabilities in system of plate and chiral rod.
+		\item Wrinkling in thin plates.
+		\item Instabilities in system of rod and infinite plate.
+		\item Book/Research monograph on Symmetry based bifurcation. 
+	\end{enumerate}
+	\mysectionast{Miscellaneous}
+	\begin{itemize}[left=0pt, label={--}]  
+		\item \textbf{Autonomous Robotics:} Designed an autonomous robot for object sensing and manipulation.
+		\item \textbf{Combat Robotics:} Built a user-controlled robot for robotics combat competitions and won first prize in institute-level robotics war competition.
+		\item \textbf{Languages:} English, Hindi, Odia.
+		\item \textbf{Student activity:} Was an active member of TV room committee in hostel. 
+	\end{itemize}
+\end{document}
+
+
+%%% achievement below education
+%%% analytical progamming language
+%%% experience 
+%%% Add in projects
+%%% personal details
+
