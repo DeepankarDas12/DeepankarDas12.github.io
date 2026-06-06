@@ -1,3 +1,7 @@
 git add .
 git commit -m "comment"
 git push origin main
+
+
+git branch -M main
+git remote add origin <url>
