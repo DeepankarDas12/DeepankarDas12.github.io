@@ -1,5 +1,5 @@
 ---
-title: "Symmetry based analysis of instabilities in a plate with stiffened edge"
+title: "Symmetry based analysis of instabilities in a plate with stiffened edge <span style='font-size: 0.4em; float: right; padding-top: 10px;'>[(Jump to thesis)](#thesis)</span>"
 subtitle: "PhD Oral Examination"
 author: Deepankar Das (17205264)
 
