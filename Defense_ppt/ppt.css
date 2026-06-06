@@ -1,0 +1,280 @@
+/* --- base --- */
+
+:root {
+    --grid-rows: 9;              /* number of rows */
+    --grid-cols: 9;              /* number of columns */
+    --grid-gap: 0.6rem;          /* spacing between cards */
+    --grid-max-height: 75vh;     /* overall grid height, adjustable */
+    --grid-row-min: 1vh;         /* minimum row height */
+}
+
+.reveal .slide figure figcaption {
+  text-align: center !important;
+}
+
+.unlisted .slide-number {
+    display: none;
+}
+
+.reveal .slide-number > a[href*='title-slide'] {
+    display: none;
+}
+
+.reveal .slide-number > a[href*='TOC'] {
+    display: none;
+}
+
+.reveal .slide-number {
+    color: #000000 !important;  /* You can use a hex code */
+    font-weight: bold;
+    background: #dddddd !important;
+    padding: 4px 8px;
+    border-radius: 6px;
+    /* color: limegreen; */  /* Or a color name */
+    /* color: rgb(150, 0, 0); */ /* Or an RGB value */
+}
+
+.reveal {
+    line-height: 1.25;     /* default is ~1.5, so this tightens it slightly */
+    letter-spacing: 0.00em; /* optional: slightly tighter letter spacing */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.reveal {
+    background: linear-gradient(
+        to top,
+        color-mix(in srgb, var(--r-background-color) 60%, #d4a017 40%),
+                                var(--r-background-color)
+    ) !important;
+    color: var(--r-main-color);     /* keep theme text color */
+    background-attachment: fixed;   /* optional: keeps gradient fixed while scaling */
+}
+
+/* --- base --- */
+.reveal .fancy-slide {
+    background:color-mix(in srgb, var(--r-background-color) 95%, orange 5%);;
+    padding: 1rem 1.5rem;
+    padding-bottom: var(--pad-bottom, 0rem); /* <-- dynamic padding */
+    box-sizing: border-box;
+    font-family: Inter, Arial, sans-serif;
+}
+
+
+
+.reveal .fancy-slide .free-card {
+    position: absolute;                /* absolute relative to .fancy-slide */
+    left: var(--x, 50%);               /* default center */
+    top: var(--y, 50%);
+    width: var(--w, max-content);
+    height: var(--h, auto);
+    z-index: calc(var(--z, 1));
+    transform-origin: var(--origin, 50% 50%);
+    transform:
+    translate(-50%, -50%)            /* center by default */
+    rotate(var(--rot, 0deg))
+    scale(var(--scale, 1));
+    will-change: transform, left, top, width, height;
+    pointer-events: auto;
+    box-sizing: border-box;
+    /* prevent the card from affecting layout (absolute does that already) */
+}
+
+
+/* visual inner card styling */
+.reveal .fancy-slide .card-body {
+    background: white;
+    padding: 1px 1px;
+    border-radius: 1px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    min-height: 40px;
+}
+
+/* optional: keep cards inside slide bounds (clamp) */
+.reveal .fancy-slide .free-card {
+    max-width: calc(100% + 1rem);
+}
+
+
+/* Card Body */
+/* Card Body – improved sticky-note look */
+.reveal .fancy-slide .card-body {
+    /* soft paper gradient */
+    background: linear-gradient(
+        to bottom right,
+        #fffec3 0%,
+        #fff7a8 40%,
+        #fff18f 100%
+    );
+
+    padding: 1px 1px 1px;
+    border-radius: 6px;
+
+    /* deeper, more realistic shadow */
+    box-shadow:
+    0 8px 18px rgba(0,0,0,0.25),
+    0 1px 2px rgba(255,255,255,0.6) inset;
+
+    position: relative;
+    overflow: visible;
+}
+
+.reveal .fancy-slide .card-body::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    width: 70px;
+    height: 22px;
+    transform: translateX(-50%) rotate(-3deg);
+    background: rgba(255,255,255,0.65);
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    border-radius: 4px;
+}
+
+
+
+
+
+
+/* Bulletproof compact lists for RevealJS (handles .compact on section OR on an inner div) */
+.reveal .slides section.compact ul,
+.reveal .slides section .compact ul,
+.reveal .slides section.compact ol,
+.reveal .slides section .compact ol,
+.reveal .slides section .compact .content ul,
+.reveal .slides section .compact .content ol,
+.reveal .slides section .compact .columns ul,
+.reveal .slides section .compact .columns ol {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 1.15em !important;
+    padding-right: 0 !important;
+    line-height: 1.15 !important;
+}
+
+.reveal .slides section.compact ul li,
+.reveal .slides section .compact ul li,
+.reveal .slides section.compact ol li,
+.reveal .slides section .compact ol li {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.15 !important;
+    display: list-item !important;
+    /* enforce no extra block margins (handles browsers using margin-block-* ) */
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    padding-block-start: 0 !important;
+    padding-block-end: 0 !important;
+}
+
+/* Remove gap when a list follows a heading/paragraph */
+.reveal .slides section .compact h1 + ul,
+.reveal .slides section .compact h2 + ul,
+.reveal .slides section .compact h3 + ul,
+.reveal .slides section .compact h4 + ul,
+.reveal .slides section .compact h5 + ul,
+.reveal .slides section .compact h6 + ul,
+.reveal .slides section .compact p + ul,
+.reveal .slides section .compact p + ol {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* And also ensure headings themselves don't add extra bottom space */
+.reveal .slides section .compact h1,
+.reveal .slides section .compact h2,
+.reveal .slides section .compact h3,
+.reveal .slides section .compact h4 {
+    margin-bottom: 0.15em !important; /* small gap for readability */
+    padding-bottom: 0 !important;
+}
+
+/* If Quarto wraps list text in <p>, remove those margins too */
+.reveal .slides section.compact ul li p,
+.reveal .slides section .compact ul li p,
+.reveal .slides section.compact ol li p,
+.reveal .slides section .compact ol li p {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.15 !important;
+    display: inline !important; /* avoid p creating its own block spacing */
+}
+
+/* Fallback: if compact class is applied to top-level (page) use also this */
+.reveal ul.compact,
+.reveal ol.compact {
+    margin: 0 !important;
+    padding-left: 1.15em !important;
+    line-height: 1.15 !important;
+}
+.reveal ul.compact li,
+.reveal ol.compact li {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.15 !important;
+}
+
+/* Put this in styles.css and reference via YAML, or at top of doc in a <style> block */
+
+/* Ultra-tight, HTML-like spacing for .raw-compact lists in RevealJS */
+
+/* 1️⃣ Wrapper itself — no outer spacing */
+.reveal .slides section .raw-compact {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 2️⃣ Lists inside the wrapper */
+.reveal .slides section .raw-compact ul,
+.reveal .slides section .raw-compact ol {
+    margin: 0 !important;                /* remove top/bottom gap */
+    padding-left: 1.15em !important;     /* normal bullet indent */
+    line-height: 1.15 !important;        /* same as inline HTML look */
+    list-style-position: outside !important;
+}
+
+/* 3️⃣ Remove per-item margins */
+.reveal .slides section .raw-compact ul li,
+.reveal .slides section .raw-compact ol li {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.15 !important;
+}
+
+/* 4️⃣ Neutralize paragraph wrappers inside list items */
+.reveal .slides section .raw-compact ul li p,
+.reveal .slides section .raw-compact ol li p {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline !important;
+    line-height: 1.15 !important;
+}
+
+/* 5️⃣ Remove gap between heading/strong line and the following list */
+.reveal .slides section .raw-compact h1,
+.reveal .slides section .raw-compact h2,
+.reveal .slides section .raw-compact h3,
+.reveal .slides section .raw-compact h4,
+.reveal .slides section .raw-compact h5,
+.reveal .slides section .raw-compact h6,
+.reveal .slides section .raw-compact p > strong {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* 6️⃣ If a list follows a heading or paragraph, remove its top margin */
+.reveal .slides section .raw-compact h1 + ul,
+.reveal .slides section .raw-compact h2 + ul,
+.reveal .slides section .raw-compact h3 + ul,
+.reveal .slides section .raw-compact h4 + ul,
+.reveal .slides section .raw-compact h5 + ul,
+.reveal .slides section .raw-compact h6 + ul,
+.reveal .slides section .raw-compact p + ul,
+.reveal .slides section .raw-compact p + ol,
+.reveal .slides section .raw-compact p > strong + ul,
+.reveal .slides section .raw-compact strong + ul {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
