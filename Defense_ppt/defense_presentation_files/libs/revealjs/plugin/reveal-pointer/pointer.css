@@ -1,1 +1,22 @@
-.cursor-dot,.cursor-dot-outline{pointer-events:none;position:absolute;top:0;left:0;border-radius:50%;opacity:0;transform:translate(-50%,-50%);transition:opacity 0.3s ease-in-out,transform 0.3s ease-in-out;}.cursor-dot{width:12px;height:12px;background-color:red;z-index:99;}.no-cursor{cursor:none;}.no-cursor a,.no-cursor div,.no-cursor span{cursor:none;}
+.cursor-dot,.cursor-dot-outline{
+    pointer-events:none;
+    position:absolute;
+    top:0;left:0;
+    border-radius:50%;
+    opacity:0;
+    transform:translate(-50%,-50%);
+    transition:opacity 0.3s ease-in-out,transform 0.3s ease-in-out;}
+.cursor-dot{
+    width:12px;
+    height:12px;
+    background: radial-gradient(circle, #FFFF00 0%,    /* Core bright yellow */
+                                #FF9900 20%,   /* Transition to orange */
+                                #FF4400 40%,   /* Mid red-orange */
+                                #FF000000 60%,   /* Softer, outer pinkish-red */
+                                #00000000 100% /* Fade to full transparency of the soft red to prevent grey rings */);
+    /*background-color:red;*/
+    z-index:99;}
+.no-cursor{
+    cursor:none;}
+.no-cursor a,.no-cursor div,.no-cursor span{
+    cursor:none;}
