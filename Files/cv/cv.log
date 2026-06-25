@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.2)  23 JUN 2026 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.2)  25 JUN 2026 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -516,10 +516,10 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13666 strings out of 469515
- 232197 string characters out of 5470808
+ 13667 strings out of 469515
+ 232208 string characters out of 5470808
  656013 words of memory out of 5000000
- 42179 multiletter control sequences out of 15000+600000
+ 42180 multiletter control sequences out of 15000+600000
  629569 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,11n,79p,1191b,564s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -531,7 +531,7 @@ dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv.pdf (4 pages, 163144 bytes).
+Output written on cv.pdf (4 pages, 163198 bytes).
 PDF statistics:
  108 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream
