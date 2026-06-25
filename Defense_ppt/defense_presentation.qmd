@@ -1,5 +1,5 @@
 ---
-title: "Symmetry based analysis of instabilities in a plate with stiffened edge <span style='font-size: 0.4em; float: right; padding-top: 10px;'>[(Jump to thesis)](#thesis)</span>"
+title: "Symmetry based analysis of instabilities in a plate with stiffened edge <span style='font-size: 0.4em; float: right; padding-top: 10px;'>[(Jump to thesis)](#thesis-link-to-references)</span>"
 subtitle: "PhD Oral Examination"
 author: Deepankar Das (17205264)
 
@@ -1219,11 +1219,11 @@ THANK YOU
 
 :::
 
-# Thesis {.unlisted}
+# Thesis <span style='font-size: 0.4em; float: right; padding-top: 10px;'>[(Link to references)](https://drive.google.com/drive/folders/1ZuQSSJCfPlh4zRPVMOl0soCGIBrmW15C?usp=drive_link)</span> {.unlisted}
 
 <iframe data-src="files/17205264.pdf" width="100%" height="900px" style="border:1px solid #aaa;"></iframe>
 
-[(Link to references)](https://drive.google.com/drive/folders/1ZuQSSJCfPlh4zRPVMOl0soCGIBrmW15C?usp=drive_link)
+
 
 <!-- # Review Report {.unlisted}
 
